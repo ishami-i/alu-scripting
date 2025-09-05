@@ -1,4 +1,3 @@
 #!/usr/bin/env ruby
-input = ARGV.join(" ")
-matches = input.scan(/School/)
-puts matches.join
+input = ARGV.empty? ? STDIN.read : ARGV.join(' ')
+puts input.scan(/School/).join
